@@ -5,94 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form - Tanaka</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 40px;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 25px;
-        }
-
-        .form-group {
-            margin-bottom: 18px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 7px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="date"],
-        select,
-        textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-            font-size: 14px;
-        }
-
-        textarea {
-            height: 100px;
-            resize: vertical;
-        }
-
-        .option-group {
-            display: flex;
-            gap: 20px;
-        }
-
-        .option-group label {
-            font-weight: normal;
-            display: inline;
-        }
-
-        input[type="radio"],
-        input[type="checkbox"] {
-            margin-right: 5px;
-        }
-
-        .submit-button {
-            width: 100%;
-            padding: 12px;
-            background-color: #1976d2;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        .submit-button:hover {
-            background-color: #125aa0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <main class="container">
-        <h1>Registration Form</h1>
+        <img src="logo.jpeg" alt="Logo" class="form-logo">
+                <h1>Registration Form</h1>
 
         <form action="#" method="post">
 
@@ -192,6 +112,7 @@
             <!-- Date of Birth -->
             <div class="form-group">
                 <label for="dob">Date of Birth</label>
+
                 <input 
                     type="date" 
                     id="dob" 
@@ -205,18 +126,23 @@
 
                 <select id="program" name="program" required>
                     <option value="">-- Select Program --</option>
+
                     <option value="Information Systems">
                         Information Systems
                     </option>
+
                     <option value="Computer Science">
                         Computer Science
                     </option>
+
                     <option value="Business Management">
                         Business Management
                     </option>
+
                     <option value="Accounting">
                         Accounting
                     </option>
+
                     <option value="Communication">
                         Communication
                     </option>
